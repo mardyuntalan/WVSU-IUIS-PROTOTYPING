@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href = "http://maxcdn.bootstrapcdn.com/bootstrap" rel = "stylesheet">
+    <link href = "css\login.css" rel = "stylesheet" type = "text/css">
+    <link rel = "stylesheet" href = "fontawesome-free-5.0.8\web-fonts-with-css\css\fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script type="text/javascript" src="js\jquery-1.12.4.min.js"></script>
+    <script type = "text/javascript" src = "js\main.js"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class = "background"></div>
+    <div class = "backdrop"></div>
+    <div class = "login-form-container" id = "login-form">
+        <div class = "login-form-content">
+            <div class = "login-form-header">
+                <div class = "logo">
+                <img src = "assets\West_Visayas_State_University logo.png"/>
+                </div>
+                <h3>Student Access Module</h3>
+            </div>
+            <form method = "post" action = "" class = "login-form">
+                <div class = "input-container">
+                    <i class = "fa fa-envelope"></i>
+                    <input type = "username" class = "input" name = "username" placeholder =  "username" required>
+                </div>
+                <div class = "input-container">
+                    <i class = "fa fa-lock"></i>
+                    <input type = "password" id = "login-password" class = "input" name = "password" placeholder = "password" required>
+                    <i id = "show-password" class = "fa fa-eye"></i>
+                </div>
+                <div class = "rememberme-container">
+                    <input type = "checkbox" name = "rememberme" id = "rememberme"/>
+                    <label for = "rememberme" class = "rememberme"><span>Remember me</span></label>
+                    <a class = "forgot-password" href = "#">Forgot Password?</a>
+                </div>
+                <input type = "submit" name = "login" value = "Login" class = "button"  onclick = "window.location.href = 'message.html'"/>
+                
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

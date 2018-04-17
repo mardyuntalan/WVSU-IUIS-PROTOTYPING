@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<!-- Message Page Na rin -->
+<title>Main WVSU Student Access Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" type="text/css" href="css/main.css">
+<body class="w3-light-grey">
+<div class="w3-bar w3-top w3-indigo w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>   Menu</button>
+  <span class="w3-bar-item w3-right">WVSU |  Student Access Module</span>
+</div>
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="assets/avatar1-2.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Welcome, <strong>Mardy</strong></span><br>
+      <span>2015-1796-MN</span>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="message.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-files-o fa-fw"></i>  Messages</a>
+    <a href="sectionoffering.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-list fa-fw"></i>  Section Offering</a>
+    <a href="registration.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-check-square-o fa-fw"></i>  Registration</a>
+    <a href="profile.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw"></i>  Profile</a>
+    <a href="schedule.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar-o fa-fw"></i>  Schedule</a>
+    <a href="grades.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-graduation-cap fa-fw"></i>  Grades</a>
+    <a href="account.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  Account</a>
+    <a href="calendar.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar fa-fw"></i>  Calendar</a>
+    <a href="assessment.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-wpforms fa-fw"></i>  Assessment</a>
+    <a href="login.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw"></i>  Logout</a>
+    <br><br>
+  </div>
+</nav>
+
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:300px;margin-top:43px;"><br><br>
+     <form>
+                <label>Date: </label>
+                <br>
+                <p id = "calendar"></p>
+                <script>
+                        var d = new Date();
+                        document.getElementById("calendar").innerHTML = d;
+                        </script>
+                    
+                       <div class = "cen">
+                    <table class = "bla" border="1" cellpadding="1" cellspacing="0" width="15%" bgcolor="#fffff">
+                            <tbody><tr>
+                              <td class="eee" colspan="4"><select name="cboMon" onchange="javascript:this.form.submit()">
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option selected="" value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option></select></td>
+                              <td class="eee" colspan="3" align="center"><select name="cboYr" onchange="javascript:this.form.submit()" width = "100%"><option selected="">2018</option><option>2017</option><option>2016</option><option>2015</option><option>2014</option><option>2013</option><option>2012</option><option>2011</option><option>2010</option><option>2009</option><option>2008</option><option>2007</option><option>2006</option><option>2005</option><option>2004</option><option>2003</option><option>2002</option><option>2001</option><option>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option><option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option></td>
+                            </tr>
+                            <tr>
+                                <td align="center" width="14%" class="eee" bgcolor="#687da5">
+                                <font color="whitesmoke">S</font>
+                                </td>
+                                <td align="center" width="14%" class="eee" bgcolor="#687da5"><font color="whitesmoke">M</font>
+                                </td>
+                                <td align="center" width="14%" class="eee" bgcolor="#687da5"><font color="whitesmoke">T</font>
+                                </td>
+                                <td align="center" width="14%" class="eee" bgcolor="#687da5"><font color="whitesmoke">W</font>
+                                </td>
+                                <td align="center" width="14%" class="eee" bgcolor="#687da5"><font color="whitesmoke">TH</font>
+                                </td>
+                                <td align="center" width="14%" class="eee" bgcolor="#687da5"><font color="whitesmoke">F</font>
+                                </td>
+                                <td align="center" width="14%" class="eee" bgcolor="#687da5"><font color="whitesmoke">S</font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" width="14%" class="eee">1</td><td align="center" width="14%" class="eee">2</td>
+                                <td align="center" width="14%" class="eee">3</td><td align="center" width="14%" class="eee">4</td>
+                                <td align="center" width="14%" class="eee">5</td><td align="center" width="14%" class="eee">6</td>
+                                <td align="center" width="14%" class="eee">7</td></tr><tr><td align="center" width="14%" class="eee">8</td>
+                                    <td align="center" width="14%" class="eee">9</td><td align="center" width="14%" class="eee">10</td>
+                                    <td align="center" width="14%" class="eee">11</td><td align="center" width="14%" class="eee">12</td>
+                                    <td align="center" width="14%" class="eee" >13</td>
+                                    <td align="center" width="14%" class="eee">14</td>
+                            </tr>
+                            <tr>
+                                <td align="center" width="14%" class="eee">15</td>
+                                <td align="center" width="14%" class="eee">16</td>
+                                <td align="center" width="14%" class="eee">17</td>
+                                <td align="center" width="14%" class="eee">18</td>
+                                <td align="center" width="14%" class="eee">19</td>
+                                <td align="center" width="14%" class="eee">20</td>
+                                <td align="center" width="14%" class="eee">21</td>
+                            </tr>
+                            <tr>
+                                <td align="center" width="14%" class="eee">22</td>
+                                <td align="center" width="14%" class="eee">23</td>
+                                <td align="center" width="14%" class="eee">24</td>
+                                <td align="center" width="14%" class="eee">25</td>
+                                <td align="center" width="14%" class="eee">26</td>
+                                <td align="center" width="14%" class="eee">27</td>
+                                <td align="center" width="14%" class="eee">28</td>
+                            </tr>
+                            <tr>
+                                <td align="center" width="14%" class="eee">29</td>
+                                <td align="center" width="14%" class="eee">30</td>
+                                <td align="center" width="14%" class="eee">&nbsp;</td>
+                                <td align="center" width="14%" class="eee">&nbsp;</td>
+                                <td align="center" width="14%" class="eee">&nbsp;</td>
+                                <td align="center" width="14%" class="eee">&nbsp;</td>
+                                <td align="center" width="14%" class="eee">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </form>
+   
+    <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h6> <center> 2018 untalan | devecais | hongco | fernandez | with w3schools <i class = "fa fa-heart"></i> </center></h6>
+  </footer>
+</div>
+<script>
+var mySidebar = document.getElementById("mySidebar");
+var overlayBg = document.getElementById("myOverlay");
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+</script>
+</body>
+</html>

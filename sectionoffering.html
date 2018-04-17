@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<!-- Message Page Na rin -->
+<title>Main WVSU Student Access Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<body class="w3-light-grey">
+<div class="w3-bar w3-top w3-indigo w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>   Menu</button>
+  <span class="w3-bar-item w3-right">WVSU  |  Student Access Module</span>
+</div>
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="assets/avatar1-2.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Welcome, <strong>Mardy</strong></span><br>
+      <span>2015-1796-MN</span>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="message.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-files-o fa-fw"></i>  Messages</a>
+    <a href="sectionoffering.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-list fa-fw"></i>  Section Offering</a>
+    <a href="registration.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-check-square-o fa-fw"></i>  Registration</a>
+    <a href="profile.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw"></i>  Profile</a>
+    <a href="schedule.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar-o fa-fw"></i>  Schedule</a>
+    <a href="grades.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-graduation-cap fa-fw"></i>  Grades</a>
+    <a href="account.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  Account</a>
+    <a href="calendar.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar fa-fw"></i>  Calendar</a>
+    <a href="assessment.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-wpforms fa-fw"></i>  Assessment</a>
+    <a href="login.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw"></i>  Logout</a>
+    <br><br>
+  </div>
+</nav>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-th-list"></i> Section Offering</b></h5>
+  </header>
+  <div class = "connnt">         
+            <form>
+              <select class = "w3-bar-item w3-padding" name="Select Course" width = "100%">
+                <option >AB-ELS  Bachelor of Arts in English Language Studies</option>
+                <option >AB-FL  Bachelor of Arts in Foreign Languages</option>
+                <option >AB-POLSCI  Bachelor of Arts in Political Science</option>
+                <option >ABE  Bachelor of Arts in English</option>
+                <option >AECE  Associate in Early Childhood Education</option>
+                <option >BAB  Bachelor of Arts in Broadcasting</option>
+                <option >BAJ  Bachelor of Arts in Journalism</option>
+                <option >BB  Bachelor in Broadcasting</option>
+                <option >BCAE  Bachelor of Culture and Arts Education</option>
+                <option >BCM  Bachelor in Cooperative Management</option>
+                <option >BEED  Bachelor of Elementary Education</option>
+                <option >BEED-ECE  Bachelor in Elementary Education with Specialization in Early Childhood Education</option>
+                <option >BEED-ECE-MC  Bachelor in Elementary Education with Specialization in Early Childhood Education (Model Curriculum)</option>
+                <option >BEED-GENED  Bachelor in Elementary Education Specialization in General Education</option>
+                <option >BEED-SOCSCI  Bachelor in Elementary Education Major in Social Science</option> 
+                <option >BEED-SOCSTUD  Bachelor of Elementary Education Major in Social Studies</option>
+                <option >BHRM  Bachelor in Hotel and Restaurant Management</option>
+                <option >BJ  Bachelor in Journalism</option>
+                <option >BME  Bachelor of Music Education</option>
+                <option >BOT  Bachelor of Tourism</option>
+                <option >BPE  Bachelor of Physical Education</option>
+                <option >BPE-DANCE  Bachelor of Physical Education Major in Dance</option>
+                <option >BPE-SPE  Bachelor of Physical Education Major in SWE</option>
+                <option >BPE-SWM  Bachelor of Physical Education Major in Sports and Wellness Management</option>
+                <option >BSAM  Bachelor of Science in Applied Mathematics</option>
+                <option >BSBA-BM  Bachelor of Science in Business Administration Major in Business Management</option>
+                <option >BSBS  Bachelor of Science in Biology</option>
+                <option >BSCS  Bachelor of Science in Computer Studies</option>
+                <option >BSIS Bachelor of Science in Information Systems</option>
+                <option >BSIT  Bachelor of Science in Information Technology</option>
+                <option >BSED-BIO  Bachelor of Secondary Education Major in Biology</option>
+                <option >BSED-ENG  Bachelor of Secondary Education Major in English</optio>
+                <option >BSED-FIL  Bachelor of Secondary Education Major in Filipino</option>
+                <option >BSED-MATH  Bachelor of Secondary Education Major in Mathematics</option>
+                <option ></option>
+              </select>
+              <br><br>
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#yupp">View Section</button>
+              <div id="yupp" class="collapse">
+                <table>
+                    <tr>
+                      <th>First Year</th>
+                    </tr>
+                    <tr>
+                      <td>No Section Found</td>
+                    </tr>
+                    <tr>
+                        <th>Second Year</th>
+                      </tr>
+                      <tr>
+                        <td>No Section Found</td>
+                      </tr>
+                      <tr>
+                        <th>Third Year</th>
+                      </tr>
+                      <tr>
+                        <td>No Section Found</td>
+                      </tr>
+                      <tr>
+                        <th>Fourth Year</th>
+                      </tr>
+                      <tr>
+                        <td>No Section Found</td>
+                      </tr>
+                  </table>
+              </div>
+               <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h6> <center> 2018 untalan | devecais | hongco | fernandez |with w3schools <i class = "fa fa-heart"></i> </center></h6>
+  </footer>
+            </form>     
+    </div>
+
+   
+<script>
+var mySidebar = document.getElementById("mySidebar");
+var overlayBg = document.getElementById("myOverlay");
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+</script>
+</body>
+</html>
